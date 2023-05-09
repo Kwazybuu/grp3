@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Caloocan Travel Web</title>
+    <link rel="shortcut icon" href="image/favicon3.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    
+
+</head>
+<body>
+
+    <link rel="stylesheet" href="my style/style.css">
+    <script src="My script/myscripts.js"></script>
+
+    <div class="headerr">
+        <span class="footerlogo1"><img src="image/nobglogo.png" style="height: 200px; width: 200px;"></span>
+    </div>
+    <div class="sportscomplex" > <img src="image/front.jpg" width="1349.4px" height="700px">
+        
+        </div>
+        <span class="caloocan">CALOOCAN</span>
+        <span class="destination">CITY OF</span></div>
+
+        <div class="descriptionbox"><span class="description"> On the surface, setting up this website might seem like a straightforward process. After all, how difficult it is to get visitors to see a beautiful city! But given that Caloocan is a highly urbanized area that makes up almost half of Metro Manila, the site has a lot to offer. This is done by dividing different barangays into different 'experiences'.
+        </span> </div>
+
+        <div class="norsou"> <span class="norsouinside">Hurry, spaces filling up quick for trips to Caloocan</span></div>
+        <div class="citytypes">
+            
+            
+                        
+                        <div class="gallerymargin">
+                        <span class="gallerybox"><span class="galleryfilter"><img src="image/solidwhite.png" height="600px" width="1300px"></span>
+                        <img src="image/caloocangallery2.jpg" height="600px" width="1300px">
+                            <span class="gallerytext">CALOOCAN CITY GALLERY</span></span>
+                        <a id="nohover" href="my pages/church.html">
+                            <span class="gallerychurch"> 
+                                <img src="image/church.jpg" style="height:203px ;width:319px ; border-radius: 80px;">
+                                    <span class="text">CHURCHES</span>
+                                </span>
+                            </a>
+                            <a id="nohover" href="my pages/resort.html">
+                                <span class="galleryresort">
+                                     <img src="image/resorts.jpg" style="height:203px ;width:319px ; border-radius: 80px;">
+                                        <span class="text">RESORTS</span>
+                                    </span>
+                                </a>
+                                <a id="nohover" href="my pages/food.html">
+                                    <span class="galleryfoods">
+                                         <img src="image/food.jpg" style="height:203px ;width:319px ; border-radius: 80px;">
+                                            <span class="text">FOODS</span>
+                                        </span>
+                                    </a>
+                        <a id="nohover" href="my pages/mall.html">
+                            <span class="gallerymalls">
+                                 <img src="image/mall.jpg" style="height:203px ;width:319px ; border-radius: 80px;">
+                                    <span class="text">MALLS</span>
+                                </span>
+                            </a>
+                            <a id="nohover" href="my pages/hotel.html">
+                                <span class="galleryhotels">
+                                     <img src="image/hotel.jpg" style="height:203px ;width:319px ; border-radius: 80px;">
+                                        <span class="text">HOTELS</span>
+                                    </span>
+                                </a>
+                        <a id="nohover" href="my pages/park.html">
+                            <span class="galleryparks">
+                                 <img src="image/parks.jpg" style="height:203px ;width:319px ; border-radius: 80px;">
+                                    <span class="text">PARKS</span>
+                                </span>
+                            </a>
+                    </div>
+
+
+
+
+<!--fix header-->
+                        <div id="wrap">
+  <form action="" autocomplete="on">
+  <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+  </form>
+</div>
+<div class="govlogo"><img src="image/govlogo.png" alt=""></div>
+    <div class="header">
+        
+        <nav id="navid">
+            <ul id="ulid"> 
+            <li id="liid"><a href="index.html">HOME</a></li>
+            <li id="liid"><a href="#gotogallery" >GALLERY</a></li>
+            <li id="liid"><a href="my pages/Parkpages/GlorietaPark.html">ABOUT US</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div class="logo"> <img src="image/logonicath.png" height="130px" width="130px"></div>
+    <div id="gotogallery"></div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <ul id="search-results"></ul>
+      </div>
+
+
+
+
+
+
+
+      <script>
+        const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const suggestions = [
+    'Glorieta Park',
+  ];
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim();
+    if (query.length < 1) {
+      searchResults.style.display = 'none';
+      return;
+    }
+    const matchingSuggestions = suggestions.filter(suggestion =>
+      suggestion.toLowerCase().includes(query.toLowerCase())
+    );
+    if (matchingSuggestions.length > 0) {
+      searchResults.innerHTML = '';
+      matchingSuggestions.forEach(suggestion => {
+        const li = document.createElement('li');
+        li.textContent = suggestion;
+        searchResults.appendChild(li);
+      });
+      searchResults.style.display = 'block';
+    } else {
+      searchResults.style.display = 'none';
+    }
+  });
+  searchResults.addEventListener('click', event => {
+    const li = event.target.closest('li');
+    if (li) {
+      const suggestion = li.textContent;
+      if (suggestion === 'Glorieta Park') {
+        window.location.href = 'my pages/Parkpages/GlorietaPark.html';
+      } else {
+        
+      }
+    }
+  });
+  
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.search-container')) {
+      searchResults.style.display = 'none';
+    }
+  });
+      </script>
+    
+
+    
+</body>
+</html>
