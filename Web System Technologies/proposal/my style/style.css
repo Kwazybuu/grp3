@@ -1,0 +1,465 @@
+a:link {
+    text-decoration: none;
+    }
+    a::before{
+        content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background: red;
+border: 4px;
+scale: .1 ;
+transform-origin: left;
+transition: scale 1s;
+    }
+    a:hover::before{
+        scale: 1;
+        }
+        a{
+        color: white;
+        }
+    body{
+        background-color: #FFE6C7;
+    }
+    .header{
+        top: 0;
+        left: 0;
+        position: fixed ;
+        background-color: #454545;
+        width:  1368px;
+        height: 70px;
+    }
+    
+    
+    #navid{
+display: flex ;
+position: absolute;
+gap: 8px;
+top: 0%;
+left: 5%;
+cursor: pointer;
+}
+#ulid{
+justify-content: space-between ;
+list-style: none;
+display: flex;
+gap: 32px;
+}
+#liid{
+list-style: none;
+position: relative;
+display: inline-block;
+font-size: 30px;
+color: white;
+font-family: 'inter';
+}
+
+#liid::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background: red;
+border: 4px;
+scale: .1 ;
+transform-origin: left;
+transition: scale 1s;
+}
+
+#liid:hover::before{
+scale: 1;
+}
+#nohover{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+    }
+    a::before{
+        content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+height: 0px;
+background: transparent;
+border: 0px;
+scale: .0 ;
+transform-origin: left;
+transition: scale 0s;
+    }
+    a:hover::before{
+        scale: 0;
+    }
+    .logo{
+        position: fixed;
+        top: -6%;
+        left: -0.5%;
+        height: 130px;
+        width: 130px;
+        background-color: transparent;
+        }
+        html, body {
+            scroll-behavior: smooth;
+          }
+          .search-container {
+            position: fixed;
+            top: 2.1%;
+            left: 70%;
+          }
+          
+          #search-input {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 300px;
+            font-size: 16px;
+          }
+          
+          #search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+          }
+          
+          #search-results li {
+            padding: 8px 16px;
+            cursor: pointer;
+          }
+          
+          #search-results li:hover {
+            background-color: #f2f2f2;
+          }
+/*fix header*/
+#gotogallery{
+    position: absolute;
+    top: 160%;
+}
+
+.sportscomplex{
+position: absolute;
+top: 7.3%;
+left: 0%;
+height: 700px;
+width: 1349.4px;
+}
+.govlogo{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 69%;
+    left: 25%;
+    height: 250px;
+    width: 250px;
+    animation: z 2s ;
+}
+@keyframes z{
+    0%{top: -20%;
+    left: 25%}
+    50%{top: 69%;
+    left: 25%;}
+    50.5%{top: 69%;
+    left: 25%;}
+    100%{top: 69%;
+    left: 25%;}
+    }
+.caloocan{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+position: absolute;
+top: 40%;
+left: 25%;
+transform: translateX(-50%) translateY(-50%);
+cursor: default;
+font-size: 110px;
+animation: c 2s ;
+}
+@keyframes c{
+0%{top: -20%;
+left: 25%;}
+50%{top: 40%;
+left: 25%;}
+51%{top: 40%;
+left: 25%;}
+100%{top: 40%;
+left: 25%;}
+}
+.destination{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+position: absolute;
+top: 28%;
+left: 25%;
+transform: translateX(-50%) translateY(-50%);
+cursor: default;
+font-size: 40px;
+animation: x 2s ;
+}
+@keyframes x{
+0%{top: -20%;
+left: 25%}
+50%{top: 28%;
+left: 25%;}
+50.5%{top: 28%;
+left: 25%;}
+100%{top: 28%;
+left: 25%;}
+}
+.descriptionbox{
+background-color: transparent;
+width: 1200px;
+height: 200px;
+position: absolute;
+top: 150%;
+left: 50%;
+transform: translateX(-50%)translateY(-50%);
+}
+.description{
+font-size: 20px;
+font-family: 'inter';
+color: black;
+text-align: center;
+position: absolute;
+left: 0;
+}
+.norsou{
+background-color: #ffa559;
+width: 1349.4px;
+height: 80px;
+position: absolute;
+top: 113%;
+left: 0%;
+}
+.norsouinside{
+font-size: 40px;
+font-family: 'inter';
+color: black;
+text-align: center;
+position: absolute;
+left: 20%;
+top: 15%;
+
+}
+
+
+
+/*Area of images*/
+.wrapper1{
+width: 100%;
+display: flex;
+animation: slide 16s infinite;
+}
+
+img{
+width: 100%;
+}
+/*Animation activated by keyframes*/
+@keyframes slide{
+0%{
+    transform: translateX(0);
+}
+25%{
+    transform: translateX(0);
+}
+30%{
+    transform: translateX(-100%);
+}
+50%{
+    transform: translateX(-100%);
+}
+55%{
+    transform: translateX(-200%);
+}
+75%{
+    transform: translateX(-200%);
+}
+80%{
+    transform: translateX(-300%);
+}
+100%{
+    transform: translateX(-300%);
+}
+}
+                .gallerybox{
+                    position: absolute;
+                    top: 43%;
+                    left: 0;
+                    width: 1349px;
+                    height: 500px;
+                    transform: translateY(-50%);
+                }
+                .galleryfilter{
+                    position: absolute;
+                    top: 50%;
+                    left: 0%;
+                    width: 1349px;
+                    height: 500px;
+                    filter:opacity(40%);
+                    transform: translateY(-50%);
+                }
+                .gallerytext{
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    position: absolute;
+                    width: 100%;
+                    top: 13%;
+                    left: 50%;
+                    font-size: 70PX;
+                    font-family: 'inter';
+                    text-align: center;
+                    color: black;
+                }
+                .gallerymargin{
+                    background-color: #FFA559;
+                    position: absolute;
+                    top: 165%;
+                    left: 0;
+                    height: 650px;
+                    width: 1349px;
+                }
+                .gallerychurch{
+                    height: 203px;
+                    width: 319px;
+                    border-radius: 80px;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 40%;
+                    left: 20%;
+                    transition: ease-in 0.2s;
+                    filter: none;
+                }
+                .gallerychurch:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 38%;
+                    border: solid 1px;
+                }
+                
+                .galleryresort{
+                    height: 203px;
+                    width: 319px;
+                    border-radius: 80px;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 40%;
+                    left: 50%;
+                    transition: ease-in 0.2s;
+                }
+                .galleryresort:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 38%;
+                    border: solid 1px;
+                }
+                .galleryfoods{
+                    height: 203px;
+                    width: 319px;
+                    border-radius: 80px;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 40%;
+                    left: 80%;
+                    transition:ease-in  0.2s;
+                }
+                .galleryfoods:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 38%;
+                    border: solid 1px;
+                }
+                .gallerymalls{
+                    height: 203px;
+                    width: 319px;
+                    border-radius: 80px;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 78%;
+                    left: 20%;
+                    transition: ease-in 0.2s;
+                }
+                .gallerymalls:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 76%;
+                    border: solid 1px;
+                }
+                .galleryhotels{
+                    height: 203px;
+                    width: 319px;
+                    border-radius: 80px;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 78%;
+                    left: 50%;
+                    transition: ease-in 0.2s;
+                }
+                .galleryhotels:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 76%;
+                    border: solid 1px;
+                }
+                .galleryparks{
+                    height: 203px;
+                    width: 319px;
+                    border-radius: 80px;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 78%;
+                    left: 80%;
+                    transition: ease-in 0.2s;
+                }
+                .galleryparks:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 76%;
+                    border: solid 1px;
+                }
+                .galleryparks:hover{
+                    box-shadow: 10px 10px 5px #555554;
+                    top: 76%;
+                    border: solid 1px;
+                }
+                .footerlogo1{
+                    position: absolute;
+                    top: 0%;
+                    left: 5%;
+                    height: 180px;
+                    width: 180px;
+                    transform: translateX(-50%),translateY(-50%);
+                }
+                .headerr{
+                    top: 260%;
+                    left: 0;
+                    position: absolute;
+                    background: linear-gradient(90deg, white 0%,gray 30%);
+                    width: 1349.4px;
+                    height: 220px;
+                }
+                .text{
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 50%;
+                    left: 50%;
+                    text-align: center;
+                    font-family: 'inter';
+                    font-size: 50px;
+                    color: black;
+                    font-weight: bold;
+                }
+                
+                

@@ -1,0 +1,782 @@
+a:link {
+    text-decoration: none;
+    }
+    a::before{
+        content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background: red;
+border: 4px;
+scale: .1 ;
+transform-origin: left;
+transition: scale 1s;
+    }
+    a:hover::before{
+        scale: 1;
+        }
+        a{
+        color: white;
+        }
+    body{
+        background-color: #FFE6C7;
+    }
+    .header{
+        top: 0;
+        left: 0;
+        position: fixed ;
+        background-color: #454545;
+        width:  1368px;
+        height: 70px;
+    }
+    
+    
+    #navid{
+display: flex ;
+position: absolute;
+gap: 8px;
+top: 0%;
+left: 5%;
+cursor: pointer;
+}
+#ulid{
+justify-content: space-between ;
+list-style: none;
+display: flex;
+gap: 32px;
+}
+#liid{
+list-style: none;
+position: relative;
+display: inline-block;
+font-size: 30px;
+color: white;
+font-family: 'inter';
+}
+
+#liid::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background: red;
+border: 4px;
+scale: .1 ;
+transform-origin: left;
+transition: scale 1s;
+}
+
+#liid:hover::before{
+scale: 1;
+}
+#nohover{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+    }
+    a::before{
+        content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+height: 0px;
+background: transparent;
+border: 0px;
+scale: .0 ;
+transform-origin: left;
+transition: scale 0s;
+    }
+    a:hover::before{
+        scale: 0;
+    }
+    .logo{
+        position: fixed;
+        top: -6%;
+        left: -0.5%;
+        height: 130px;
+        width: 130px;
+        background-color: transparent;
+        }
+        html, body {
+            scroll-behavior: smooth;
+          }
+          .search-container {
+            position: fixed;
+            top: 2.1%;
+            left: 70%;
+          }
+          
+          #search-input {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 300px;
+            font-size: 16px;
+          }
+          
+          #search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+          }
+          
+          #search-results li {
+            padding: 8px 16px;
+            cursor: pointer;
+          }
+          
+          #search-results li:hover {
+            background-color: #f2f2f2;
+          }
+/*fix header*/
+
+    .title{
+        font-family: 'inter';
+        font-size: 60px;
+        position: absolute;
+        top: 13%;
+        left: 5%;
+        color: black;
+    }
+    .bg{
+        position: absolute;
+        left: 0;
+        top: 25%;
+        height: 650px;
+        width: 1349.4px;
+        background-color: #FFA559;
+    }
+    .churchimage{
+        top: 3%;
+        height: 650px;
+        width: 1340px;
+        position: absolute;
+        height: 600%;
+        width: 1349.4;
+    }
+    
+    
+.blackfilter{
+    top: 3%;
+        height: 650px;
+        width: 1340px;
+        position: absolute;
+        height: 600%;
+        width: 1349.4;
+        filter: opacity(80%);
+}
+/* function when click north js */
+.northtext{
+    font-family: 'inter';
+    font-size: 70px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    text-align: center;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.northtext:hover{
+    font-size: 75px;
+}
+.northtextjs{
+    font-family: 'inter';
+    font-size: 60px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 86%;
+    text-align: center;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.northtextjs:hover{
+    font-family: 'inter';
+    font-size: 65px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 86%;
+    text-align: center;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.southtextgoingrightjs{
+    font-family: 'inter';
+    font-size: 70px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    text-align: center;
+    transition: linear 0.2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.churchboxnorth{
+    height: 681px;
+    width: 955px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    transition: linear 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.churchboxnorthjs{
+    height: 681px;
+    width: 955px;
+    background-color: #FFE6C7;
+    position: absolute;
+    top: 30%;
+    left:1% ;
+    transition: linear 0.3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*end of function of north*/
+
+
+/* function when click south js */
+.southtext{
+    font-family: 'inter';
+    font-size: 70px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    text-align: center;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.southtext:hover{
+     font-size: 75px;
+     
+}
+.southtextjs{
+    font-family: 'inter';
+    font-size: 60px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    text-align: center;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.southtextjs:hover{
+    font-family: 'inter';
+    font-size: 65px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    text-align: center;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.northtextgoingleftjs{
+    font-family: 'inter';
+    font-size: 70px;
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 40%;
+    left: -25%;
+    text-align: center;
+    transition: linear 0.2s;
+}
+.churchboxsouth{
+    height: 681px;
+    width: 955px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    transition: linear 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.churchboxsouthjs{
+    height: 681px;
+    width: 955px;
+    background-color: #FFE6C7;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    transition: linear 0.3s;
+    visibility: visible;
+    opacity: 1;
+}
+/*end of function of south*/
+
+
+/* box1 north*/ 
+.box1north{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box1northjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box1northjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 25%;
+    left: 20%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box1northtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+    transition: ease-in 0.1s;
+}
+#box1northtextid:hover{
+    font-size: 16.5px;
+}
+/* end of box 1 north*/
+
+/* start of box 2 north */
+.box2north{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box2northjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box2northjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 25%;
+    left: 50%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box2northtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+}
+#box2southtextid:hover{
+    font-size: 16.5px;
+}
+/* end of box 2 north*/
+
+/* start of box 3 north */
+
+.box3north{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box3northjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box3northjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 25%;
+    left: 80%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box3northtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+}
+#box3northtextid:hover{
+    font-size: 16.5px;
+}
+/* end of box 3 north/
+
+/* start of box 4 north */
+.box4north{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box4northjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box4northjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 65%;
+    left: 20%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box4northtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+}
+#box4northtextid:hover{
+    font-size: 16.5px;
+}
+
+/* box1 south*/ 
+.box1south{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box1southjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box1southjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 25%;
+    left: 20%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box1southtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+    transition: ease-in 0.1s;
+}
+#box1southtextid:hover{
+    font-size: 16.5px;
+}
+/* end of box 1 south*/
+
+/* start of box 2 south */
+.box2south{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box2southjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box2southjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 25%;
+    left: 50%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box2southtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+}
+#box2southtextid:hover{
+    font-size: 16.5px;
+}
+/* end of box 2 south*/
+
+/* start of box 3 south */
+
+.box3south{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box3southjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box3southjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 25%;
+    left: 80%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box3southtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+}
+#box3southtextid:hover{
+    font-size: 16.5px;
+}
+/* end of box 3 south/
+
+/* start of box 4 south */
+.box4south{
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    background-color: #454545;
+    visibility: hidden; 
+    
+}
+.box4southjs{
+    height: 220px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    background-color: #454545;
+    visibility: visible;
+    transition: linear 0.1s;
+    text-align: center;
+}
+.box4southjs:hover{
+    height: 265px;
+    width: 220px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform-origin: bottom;
+    top: 65%;
+    left: 20%;
+    background: rgba(69, 69, 69, 0.5);
+    visibility: visible;
+    transition: linear 0.1s;
+    transform-origin: top;
+    
+}
+#box4southtextid{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: white;
+    font-family:'inter';
+    height: 20px;
+    width: 220px;
+    background-color: transparent;
+}
+#box4southtextid:hover{
+    font-size: 16.5px;
+}

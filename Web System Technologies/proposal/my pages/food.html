@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+    <link rel="shortcut icon" href="htmlimage/nobglogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="mypagescss/food.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script>
+        function x(){
+    var a = document.getElementById("southid");
+    a.classList.toggle("southtextjs");
+    var b = document.getElementById("northid");
+    b.classList.toggle("northtextgoingleftjs");
+    var c = document.getElementById("churchboxsouthid");
+    c.classList.toggle("churchboxsouthjs");
+    var d = document.getElementById("box1southid");
+    d.classList.toggle("box1southjs");
+    var e = document.getElementById("box2southid");
+    e.classList.toggle("box2southjs");
+    var g = document.getElementById("box3southid");
+    g.classList.toggle("box3southjs");
+    var h = document.getElementById("box4southid");
+    h.classList.toggle("box4southjs");
+}
+function y(){
+    var a = document.getElementById("northid");
+    a.classList.toggle("northtextjs");
+    var b = document.getElementById("southid");
+    b.classList.toggle("southtextgoingrightjs");
+    var c = document.getElementById("churchboxnorthid");
+    c.classList.toggle("churchboxnorthjs");
+    var d = document.getElementById("box1northid");
+    d.classList.toggle("box1northjs");
+    var e = document.getElementById("box2northid");
+    e.classList.toggle("box2northjs");
+    var g = document.getElementById("box3northid");
+    g.classList.toggle("box3northjs");
+    var h = document.getElementById("box4northid");
+    h.classList.toggle("box4northjs")
+    }
+        
+    </script>
+</head>
+<body>
+
+    <div class="title">FOODS</div>
+    <div class="bg"><span class="churchimage"><img src="htmlimage/churches.jpg" height="600px" width="1349.4px"></span>
+        <span class="blackfilter"> <img src="htmlimage/solidblack.jpg" height="600px" width="1349.4px"></span>
+    <span class="northtext" id="northid" onclick="y()">NORTH <br> CALOOCAN</span>
+<span class="southtext" id="southid" onclick="x()"> SOUTH <br> CALOOCAN </span></div>
+<!--SOUTH-->
+<div class="churchboxsouth" id="churchboxsouthid">
+    <span class="box1south" id="box1southid"><a id="box1southtextid" href="Parkpages/caloocancitypeoplespark.html">Caloocan City People's Park </a> <img src="htmlimage/n4.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+    <span class="box2south" id="box2southid"><a id="box2southtextid" href=""> Sto Nino Congress Church </a> <img src="htmlimage/church1.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+    <span class="box3south" id="box3southid"><a id="box3southtextid" href=""> Sto Nino Congress Church </a> <img src="htmlimage/church1.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+    <span class="box4south" id="box4southid"><a id="box4southtextid" href=""> Sto Nino Congress Church </a> <img src="htmlimage/church1.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+</div>
+<!--NORTH-->
+<div class="churchboxnorth" id="churchboxnorthid">
+    <span class="box1north" id="box1northid"><a id="box1northtextid" href="Parkpages/GlorietaPark.html"> Glorieta Park  </a> <img src="htmlimage/south.png" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+    <span class="box2north" id="box2northid"><a id="box2northtextid" href=""> Sto Nino Congress Church </a> <img src="htmlimage/church1.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+    <span class="box3north" id="box3northid"><a id="box3northtextid" href=""> Sto Nino Congress Church </a> <img src="htmlimage/church1.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+    <span class="box4north" id="box4northid"><a id="box4northtextid" href=""> Sto Nino Congress Church </a> <img src="htmlimage/church1.jpg" style="width:200px; height: 200px; position: absolute; transform: translate(-50%,0%);left: 50%; top: 4%;"> </span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--fix header-->
+<div id="wrap">
+    <form action="" autocomplete="on">
+    <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+    </form>
+  </div>
+  <div class="govlogo"><img src="image/govlogo.png" alt=""></div>
+      <div class="header">
+          
+          <nav id="navid">
+              <ul id="ulid"> 
+              <li id="liid"><a href="/Web System Technologies/proposal/index.html">HOME</a></li>
+              <li id="liid"><a href="/Web System Technologies/proposal/index.html#gotogallery" >GALLERY</a></li>
+              <li id="liid"><a href="my pages/Parkpages/GlorietaPark.html">ABOUT US</a></li>
+          </ul>
+          </nav>
+      </div>
+      <div class="logo"> <img src="htmlimage/logonicath.png" height="130px" width="130px"></div>
+      <div id="gotogallery"></div>
+  
+      <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <ul id="search-results"></ul>
+        </div>
+        <script src="search.js"></script>
+<a href="Parkpages/GlorietaPark.html"></a>
+</body>
+</html>
